@@ -1,0 +1,204 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+:root {
+  --cor1: #171718;
+  --cor2: #ffffff;
+  --cor3: #f42c1d;
+  --cor4: #701c1a;
+  --fontTitulo: "Work Sans", serif;
+  --fontTexto: "Open Sans", sans-serif;
+}
+
+/* Página inicial */
+/* Tablets 769px  */
+@media screen and (min-width: 769px) {
+  nav.pc {
+    display: flex;
+  }
+  nav.mobile {
+    display: none;
+  }
+
+  article.topo > h1 {
+    width: 500px;
+    width: calc(100%-30px);
+    font-size: 3.4rem;
+
+  }
+
+  article.topo > img {
+    width: 650px;
+    right: -270px;
+    bottom: -100px;
+  }
+
+  article.topo > img.scroll-icon {
+    width: 50px;
+    height: 50px;
+    bottom: 100px;
+  }
+
+  article > div.article-top-deco {
+    height: 400px;
+  }
+
+  article > div.article-top-deco > h1 {
+    font-size: 3.4rem;
+  }
+  article > div.article-top-deco > p {
+    font-size: 1.4rem;
+    width: 80%;
+  }
+
+  article > div.article-bottom-deco {
+    height: 300px;
+    margin-top: -100px;
+    margin-bottom: -10px;
+  }
+
+  article.servicos > div.container-card > div.card-servico {
+    margin-top: 80px;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--cor1);
+    border-radius: 10px;
+    border: 5px solid var(--cor4);
+    position: relative;
+    z-index: 100;
+  }
+
+  div.card-servico > img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    z-index: 100;
+  }
+
+  div.card-content > h2 {
+    margin-top: 50px;
+    color: var(--cor2);
+    font-size: 2.5rem;
+    font-family: var(--fontTitulo);
+    padding: 0px 10px;
+  }
+
+  div.card-content > p {
+    color: var(--cor2);
+    font-family: var(--fontTexto);
+    width: 100%;
+    padding: 0px 10px;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+  article.beneficios > div.card-beneficio {
+    width: 300px;
+    height: 350px;
+  }
+
+  article.processos > h1 {
+    padding: 0px 5px;
+    font-size: 3.4rem;
+    color: var(--cor1);
+    text-align: center;
+    font-family: var(--fontTitulo);
+    margin-bottom: 20px;
+  }
+
+  article.processos > p {
+    font-size: 1.4rem;
+  }
+
+  article.processos > img {
+    width: 500px;
+    margin-bottom: -100px;
+  }
+
+  article.projetos > div.container-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  article.orcamento > div.card-orcamento {
+    width: 500px;
+    height: 500px;
+    background: #171717;
+    transition: 1s ease-in-out;
+    clip-path: polygon(
+      30px 0%,
+      100% 0,
+      100% calc(100% - 30px),
+      calc(100% - 30px) 100%,
+      0 100%,
+      0% 30px
+    );
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    z-index: 1000;
+    border: 2px solid var(--cor3);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  footer {
+    width: calc(100% - 20px);
+    background-color: var(--cor1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 50px 10px;
+  }
+
+  footer > div.footer-container {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  article > div.article-top-deco > p {
+    font-size: 1.4rem;
+    width: 60%;
+  }
+
+  article.beneficios > div.container-card > div.card-beneficio {
+    width: 300px;
+    height: 450px;
+  }
+
+  .bg > h2 {
+    width: 90%;
+    font-size: 2rem;
+    color: var(--cor2);
+    text-align: center;
+    font-family: var(--fontTitulo);
+    font-weight: bolder;
+  }
+
+  div.container-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+  }
+
+  article.processos > p {
+    font-size: 1.4rem;
+    width: 60%;
+  }
+}
