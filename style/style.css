@@ -18,7 +18,7 @@
   --fontTexto: "Open Sans", sans-serif;
 }
 
-strong{
+strong {
   font-size: 1rem;
   font-family: var(--fontTitulo);
   color: var(--cor3);
@@ -258,10 +258,10 @@ article.topo > img.scroll-icon {
 }
 
 @keyframes move {
-  0%{
-      transform: translateY(-20px);
+  0% {
+    transform: translateY(-20px);
   }
-  100%{
+  100% {
     transform: translateY(0);
   }
 }
@@ -838,214 +838,260 @@ div.footer-container > div.card {
 }
 
 /* Página de Criação de Sites */
-article.site{
+article.site {
   overflow: hidden;
 }
-article.site > h1{
-    z-index: 100;
+article.site > h1 {
+  z-index: 100;
 }
-article.site > img{
-    width: 300px;
-    right:-105px;
-    bottom: 90px;
-    z-index: 1;
-}
-
-article.site > img.icon-servico{
-    width: 100px;
-    top: 200px;
-    left: -35px;
+article.site > img {
+  width: 300px;
+  right: -105px;
+  bottom: 90px;
+  z-index: 1;
 }
 
-article.container-card{
-    width: 100%;
-  
+article.site > img.icon-servico {
+  width: 100px;
+  top: 200px;
+  left: -35px;
 }
 
-article.container-card > div.site-beneficio{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background-color: red;
-    z-index:1111;
+article.container-card {
+  width: 100%;
 }
 
-.site-beneficio > img{
-    width:100%;
-    height: 100px;
+article.container-card > div.site-beneficio {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: red;
+  z-index: 1111;
 }
 
-div.site-beneficio > div.site-benefcio-card{
-    width: 300px;
-    height: 300px;
-    border-radius: 10px;
-    border: 3px solid var(--cor3);
-    z-index: 1000;
+.site-beneficio > img {
+  width: 100%;
+  height: 100px;
 }
 
-  .card-container {
-    width: 300px;
-    height: 300px;
-    position: relative;
-    border-radius: 10px;
-    margin-bottom: 20px;
-  }
-  
-  .card-container::before {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: var(--cor3);
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(20px);
-  }
-  
-  .card {
-    width: 100%;
-    height: 100%;
-    border-radius: inherit;
-    overflow: hidden;
-  }
-  
-  .card .img-content {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--cor1);
-    transition: scale 0.6s, rotate 0.6s, filter 1s;
-  }
-  
-  .card .img-content > img {
-    width: 100px;
-    height: 100px;
-    filter: invert();
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .card .content {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    gap: 10px;
-    color: #e8e8e8;
-    padding: 20px;
-    line-height: 1.5;
-    border-radius: 5px;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-  }
-  
-  .card .content .heading {
-    font-size: 2rem;
-    font-weight: bolder;
-    font-family: var(--fontTitulo);
-  }
-  .content > p{
-    font-weight: bolder;
-    font-family: var(--fontTexto);
-    font-size: 1rem;
-  }
-  .card:hover .content{
-    opacity: 1;
-    display: flex;
-    transform: translateY(0);
-    background: var(--cor1);
-    backdrop-filter: blur(7px);
-  }
-  
-  .card:hover .img-content {
-    scale: 1.2;
-  }
+div.site-beneficio > div.site-benefcio-card {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  border: 3px solid var(--cor3);
+  z-index: 1000;
+}
 
-  .card:hover .img-content  > img{
-    fill: transparent;
-  }
-  
- .card-container:hover:before   {
-    content: "";
-    z-index: -1;
-    position: absolute;
-    inset: 0;
-    background: var(--cor3);
-    transform: translate3d(0, 0, 0) scale(0.95);
-    filter: blur(40px);
-    transition: 0.3s ease-in-out;
-  }
+.card-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 
-  article.tecnologia > div.container-card{
-    flex-wrap: wrap;
-  }
-  
-  article.tecnologia > div.container-card > div.card-tecnologia {
-    margin: 0px;
-    width: 300px;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: var(--cor1);
-    border-radius: 10px;
-    border: 5px solid var(--cor4);
-    position: relative;
-    z-index: 100;
-    margin-bottom: 10px;
-  }
+.card-container::before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: var(--cor3);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+}
 
-  article.tecnologia > div.container-card > div.card-tecnologia > img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%,-50%);
-      width: 100px;
-      height: 100px;
-      filter: drop-shadow(0px 0px 7px var(--cor3));
-      
-  }
+.card {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  overflow: hidden;
+}
 
-  article.tecnologia > div.container-card > div.card-tecnologia:hover{
-    margin: 100px 0px;
-  }
+.card .img-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cor1);
+  transition: scale 0.6s, rotate 0.6s, filter 1s;
+}
 
-  article.tecnologia > div.container-card > div.card-tecnologia:hover > img {
-    width: 150px;
-    height: 150px;
-    position: absolute;
-    top: -25px;
-    z-index: 100;
-    transition: .3s ease-in-out;
-  }
+.card .img-content > img {
+  width: 100px;
+  height: 100px;
+  filter: invert();
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
 
-  article.tecnologia > div.container-card > div.card-tecnologia:hover > div.card-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    transform: translateY(0);
-    transition: 0.3s ease-in-out;
-    opacity: 1;
-  }
+.card .content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  color: #e8e8e8;
+  padding: 20px;
+  line-height: 1.5;
+  border-radius: 5px;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+}
 
-  article.tecnologia > div.container-card > div.card-tecnologia > div.card-content{
-    display: flex;
-    transform: translateY(100px);
-    opacity: 0;
-  }
+.card .content .heading {
+  font-size: 2rem;
+  font-weight: bolder;
+  font-family: var(--fontTitulo);
+}
+.content > p {
+  font-weight: bolder;
+  font-family: var(--fontTexto);
+  font-size: 1rem;
+}
+.card:hover .content {
+  opacity: 1;
+  display: flex;
+  transform: translateY(0);
+  background: var(--cor1);
+  backdrop-filter: blur(7px);
+}
+
+.card:hover .img-content {
+  scale: 1.2;
+}
+
+.card:hover .img-content > img {
+  fill: transparent;
+}
+
+.card-container:hover:before {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: var(--cor3);
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(40px);
+  transition: 0.3s ease-in-out;
+}
+
+article.tecnologia > div.container-card {
+  flex-wrap: wrap;
+}
+
+article.tecnologia > div.container-card > div.card-tecnologia {
+  margin: 0px;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: var(--cor1);
+  border-radius: 10px;
+  border: 5px solid var(--cor4);
+  position: relative;
+  z-index: 100;
+  margin-bottom: 10px;
+}
+
+article.tecnologia > div.container-card > div.card-tecnologia > img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0px 0px 7px var(--cor3));
+}
+
+article.tecnologia > div.container-card > div.card-tecnologia:hover {
+  margin: 100px 0px;
+}
+
+article.tecnologia > div.container-card > div.card-tecnologia:hover > img {
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  top: -25px;
+  z-index: 100;
+  transition: 0.3s ease-in-out;
+}
+
+article.tecnologia
+  > div.container-card
+  > div.card-tecnologia:hover
+  > div.card-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translateY(0);
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+}
+
+article.tecnologia
+  > div.container-card
+  > div.card-tecnologia
+  > div.card-content {
+  display: flex;
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+/* Página - Processos */
+
+section.processos > article.topo > h1{
+  font-size: 3rem;
+}
+
+section.processos > article.processos{
+  margin-top: -30px;
+  overflow: hidden;
+}
+
+/* Página Anuncios */
+section.anuncios > article.topo > img.icon-ad{
+  width: 100px;
+  filter: invert();
+  right: 0;
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+section.anuncios > article.topo > img.ad1{
+  width: 100px;
+  filter: invert();
+  right: -20px;
+  top: 30%;
+  transform: rotate(-20deg);
+}
+
+section.anuncios > article.topo > img.ad2{
+  width: 100px;
+  filter: invert();
+  left: -20px;
+  top: 70%;
+  transform: rotate(-20deg);
+}
 
 
-
-
+section.anuncios > article.info > div.container {
+  position: relative;
+  z-index: 1;
+  background: var(--cor1);
+  height: 200px;
+  width: 100%;
+  margin-bottom: -100px;
+}
