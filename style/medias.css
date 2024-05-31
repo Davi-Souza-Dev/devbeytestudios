@@ -22,9 +22,8 @@
   }
 
   article.topo > h1 {
-    width: 500px;
     width: calc(100%-30px);
-    font-size: 3.4rem;
+    font-size: 3rem;
   }
 
   article.topo > img {
