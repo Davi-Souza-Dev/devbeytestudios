@@ -1037,6 +1037,10 @@ article.tecnologia > div.container-card > div.card-tecnologia:hover > img {
   transition: 0.3s ease-in-out;
 }
 
+div.container-card{
+  margin-top: 80px;
+}
+
 article.tecnologia
   > div.container-card
   > div.card-tecnologia:hover
@@ -1141,4 +1145,18 @@ article.slides > h1{
 
 section.anuncios > article.beneficios > div.container-card{
   margin-top: 100px;
+}
+
+/* Página do App de menu */
+.app > .container-card > img{
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.app > .container-card{
+  margin-top: -40px;
+  z-index: 100;
+  gap: 10px;
+  flex: row;
+  flex-wrap: wrap;
 }
